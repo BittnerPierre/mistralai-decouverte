@@ -1,0 +1,38 @@
+streamlit~=1.29.0
+streamlit-chat
+streamlit-feedback
+
+openai
+
+langchain==0.1.0
+# langchain-experimental
+# langchain[docarray]==0.0.354
+# langchainhub
+# langchain_community
+# langchain[docarray]
+langchain_mistralai
+langchain-community
+
+
+mistralai
+
+tiktoken
+python-dotenv
+
+pydantic>=2.5
+
+pypdf
+sentence_transformers
+
+torch
+tabulate
+
+chromadb
+pandas
+duckdb
+openpyxl
+boto3
+PyPDF2
+faiss-cpu
+Faker
+faker-enum
