@@ -1,49 +1,47 @@
-# DMistral AI Découverte
+# Mistral AI Découverte
 
 
 ## Overview
 
-In this POC, we will build an LLM-powered assistant that performs data exploration and question answering 
+In this project, we will build an LLM-powered assistant that performs data exploration and question answering 
 by writing and executing SQL queries on data (Duckdb).
 The application can also edit and fix data on the database base on statutes and KBIS that you
 upload in an embedded Chroma DB.
-The application uses Streamlit, langchain and is plugged into your Azure OpenAI LLM.
+The application uses Streamlit, langchain and is plugged into your Mistral AI Platform.
 
 ## Dependencies
-In order to run the application you should install streamlit, azure openAI or openai, langchain, 
-chromadb, duckdb and boto3 client (for Athena AWS)
+In order to run the application you should install streamlit, mistralai, langchain, 
+chromadb and duckdb
 
 Once python installed, update the pip version by typing :
 ```sh
 python -m pip install --upgrade pip
 ```
 
-Then install the project dependecies by typing :
+Then install the project dependencies by typing :
 ```sh
 run pip install -r requirements.txt
 ```
 
 ## Credentials
 Application is looking a .env file within the PATH of the project that contains following variables:
-* OPENAI_API_KEY=
 * MISTRAL_API_KEY=
-* AZURE_OPENAI_API_KEY=
 
 ## setup
 Application can be setup with the file conf/config.ini
 
-Data catalog can be extended with excel in 'data/data-catalog/dlt-data-catalog.xlsx'.
+Data catalog can be extended with excel in 'data/data-catalog/data-catalog.xlsx'.
 You can add field definition (technical and business) to help LLM understanding of schema.
 
-A cache directory is used for pappers and LLM generated company in 'data/cache'.
+A cache directory is used for LLM generated company in 'data/cache'.
 
 ## Run the app
 
-Once environment is set up and secrets are configured (OpenAI and Athena) in a .env file 
+Once environment is set up and secrets are configured (MistralAI) in a .env file 
 within the application path, the app can be run by:
 
 ```sh
-streamlit run src/4_Extract.py
+streamlit run src/Hello.py
 ```
 
 ## Additional informations
